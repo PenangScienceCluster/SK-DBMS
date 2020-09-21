@@ -1,10 +1,21 @@
 # Designing a Database
 
 ## Introduction
-TBA
+TBA (introduce logical level)
 
 ## Key Concepts/Glossary
-TBA
+- Entity:
+- Relationship:
+- Relational model:
+  - Table/Relation/File:
+  - Column/Attribute/Field:
+  - Row/Tuple/Record:
+  - Domain:
+  - Degree:
+  - Cardinality:
+  - Key:
+    - Primary key:
+    - Foreign key
 
 ## Overview
 Flow chart
