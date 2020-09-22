@@ -18,7 +18,7 @@ TBA (introduce logical level)
     - Foreign key
 
 ## Overview
-Flow chart
+![Flow chart](assets/logi-view.svg)
 
 ## Identifying Requirements
 
