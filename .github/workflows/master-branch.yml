@@ -1,0 +1,60 @@
+name: PDF Builder
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  populate_md_files:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.step1.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v2
+      - id: step1
+        run: |
+          export FILE_LIST=$(printf "'%s' " *.md | sed "s#' '#', '#g")
+          export FILE_JSON=$(echo "{'file': [${FILE_LIST}]}")
+          echo ${FILE_JSON}  # Show detected files; for debugging purpose
+          echo "::set-output name=matrix::${FILE_JSON}"
+
+  create_release:
+    runs-on: ubuntu-latest
+    outputs:
+      upload_url: ${{ steps.create_release.outputs.upload_url }}
+    steps:
+      - id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          body: |
+            PDF files generated for Release ${{ github.ref }}
+          draft: true
+          prerelease: true
+
+  build_upload_pdf:
+    needs: [ populate_md_files, create_release ]
+    runs-on: ubuntu-latest
+    strategy:
+      matrix: ${{fromJson(needs.populate_md_files.outputs.matrix)}}
+      fail-fast: false
+    steps:
+      - uses: actions/checkout@v2
+      - run: mkdir output  # create output dir
+      - uses: docker://pandoc/latex
+        with:
+          args: --output=output/${{ matrix.file }}.pdf ${{ matrix.file }}
+      - uses: actions/upload-artifact@master
+        with:
+          path: output/${{ matrix.file }}.pdf
+      - uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ needs.create_release.outputs.upload_url }}
+          asset_path: output/${{ matrix.file }}.pdf
+          asset_name: ${{ matrix.file }}.pdf
+          asset_content_type: application/pdf
