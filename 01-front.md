@@ -98,7 +98,7 @@ The second normal form requires each non-key attribute in a table to be complete
 
 Here are the steps to normalise 1NF to 2NF:
 1. Examine all non-key attributes and their dependencies with the primary/composite key in the table.
-2. Form a new table by detaching all non-key attributes with incomplete dependencies. 
+2. Form a new table by detaching all non-key attributes with incomplete dependencies.
 3. Create or appoint a primary/composite key for the new table.
 
 | Before Normalisation (2NF)|
@@ -128,7 +128,7 @@ Here are the steps to normalise 2NF to 3NF:
 | **Student** (<ins>StudentNo</ins>, StudentName, Major) <br> **CourseGrade** (<ins>StudentNo</ins>, <ins>CourseNo</ins>, Grade) <br> **Course** (<ins>CourseNo</ins>, CourseName, InstructorNo) <br> **Instructor** (<ins>InstructorNo</ins>, InstructorName, InstructorLocation) |
 
 ## Construction of ER Diagram
-Populating the tables and labeling the relationships among them form an ER diagram. After 3 rounds of normalisation, there is only one step away to constructing the ER diagram.
+Populating the tables and labelling the relationships among them form an ER diagram. After 3 rounds of normalisation, there is only one step away to constructing the ER diagram.
 Without figuring out the relationships among the entities (tables), it is impossible to construct a complete ER diagram. In order to construct one for the example above, the following assumptions have to be made:
 - A student can take multiple courses and receive grades respectively.
 - It is possible that a student may not be taking any courses.
@@ -137,6 +137,7 @@ Without figuring out the relationships among the entities (tables), it is imposs
 - It is possible that a course has no students enrolled in it.
 
 All these information can be compiled into the following ER diagram:
+
 ![ER Diagram](assets/erd.svg)
 
 ## Credits
