@@ -1,0 +1,41 @@
+name: PDF Builder
+
+on:
+  push:
+    branches: [ test ]
+
+jobs:
+  populate_md_files:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.step1.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v2
+      - id: step1
+        run: |
+          export FILE_LIST=$(printf "'%s' " *.md | sed "s#' '#', '#g")
+          export FILE_JSON=$(echo "{'file': [${FILE_LIST}]}")
+          echo ${FILE_JSON}  # Show detected files; for debugging purpose
+          echo "::set-output name=matrix::${FILE_JSON}"
+
+  build_upload_pdf:
+    needs: [ populate_md_files ]
+    runs-on: ubuntu-latest
+    strategy:
+      matrix: ${{fromJson(needs.populate_md_files.outputs.matrix)}}
+      fail-fast: false
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          mkdir output  # create output dir
+      - uses: BaileyJM02/markdown-to-pdf@master
+        with:
+          input_dir: .
+          output_dir: output
+          images_dir: assets
+          image_import: ./assets
+          theme: assets/style.css
+          build_html: true
+      - uses: actions/upload-artifact@master
+        with:
+          path: output/*

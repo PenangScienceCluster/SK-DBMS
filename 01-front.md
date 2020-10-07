@@ -1,3 +1,5 @@
+<DIV class="markdown-body">
+
 # Designing a Database
 
 ## Introduction
@@ -6,9 +8,13 @@ In database design, developers will start with **gathering requirements** from c
 
 ## Key Concepts/Glossary
 
-![Entity Relationship](assets/entrel-view.svg) *Entity Relationship Diagram*
+<figure class="image"><img src="./assets/entrel-view.svg" alt="Entity Relationship">
+  <figcaption style="text-align: center; font-style: italic;">Entity Relationship Diagram</figcaption>
+</figure>
 
-![Table](assets/table-view.svg) *Components of a database table*
+<figure class="image"><img src="./assets/table-view.svg" alt="Table">
+  <figcaption style="text-align: center; font-style: italic;">Components of a database table</figcaption>
+</figure>
 
 |                   Name | Definition                                                                                                                |
 |-----------------------:|:--------------------------------------------------------------------------------------------------------------------------|
@@ -26,9 +32,13 @@ In database design, developers will start with **gathering requirements** from c
 |            Foreign key | an attribute in a table that references the primary key in another table                                                  |
 |          Composite key | two or more attributes which can be used to uniquely identify each record in a table                                      |
 
+<DIV style="page-break-inside: avoid;">
+
 ## Overview
 
-![Flow chart](assets/design-view.svg)
+![Flow chart](./assets/design-view.svg)
+
+</div>
 
 ## Identifying Requirements
 
@@ -78,9 +88,10 @@ Follow the remaining sections to see how it can be normalised (up to 3<sup>rd</s
 
 The first normal form requires the table to contain only a single value anywhere in the cells, and there should be no repeating groups throughout the rows.
 
-![Multiple Value](assets/multi-val.svg)
-
-![Repeating Group](assets/rep-group.svg)
+<div style="padding: 0; display: table-cell; text-align: center; vertical-align: middle;">
+    <img src="./assets/multi-val.svg" alt="Multiple Value">
+    <img src="./assets/rep-group.svg" alt="Repeating Group">
+</div>
 
 The examples above have nothing look alike with the unnormalised table, but still it has not yet fulfil the criterion for 1NF. Read the table carefully and you will notice the columns after “**Major**” are the repeating group (*i.e. each student gets a grade for each course the student has taken, and each student can take multiple courses*).
 
@@ -139,6 +150,8 @@ Here are the steps to normalise 2NF to 3NF:
 |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Student** (<ins>StudentNo</ins>, StudentName, Major) <br> **CourseGrade** (<ins>StudentNo</ins>, <ins>CourseNo</ins>, Grade) <br> **Course** (<ins>CourseNo</ins>, CourseName, InstructorNo) <br> **Instructor** (<ins>InstructorNo</ins>, InstructorName, InstructorLocation) |
 
+<DIV style="page-break-inside: avoid;">
+
 ## Construction of ER Diagram
 
 Populating the tables and labelling the relationships among them form an ER diagram. After 3 rounds of normalisation, there is only one step away to constructing the ER diagram. Without figuring out the relationships among the entities (tables), it is impossible to construct a complete ER diagram. In order to construct one for the example above, the following assumptions have to be made:
@@ -151,8 +164,14 @@ Populating the tables and labelling the relationships among them form an ER diag
 
 All these information can be compiled into the following ER diagram:
 
-![ER Diagram](assets/erd.svg)
+![ER Diagram](./assets/erd.svg)
+
+</div>
 
 ## Credits
 
-This article contains work from the following source: 1. Watt, A. and N. Eng. (2014). Database Design – 2nd Edition. Victoria, B.C.: BCcampus. Retrieved from https://opentextbc.ca/dbdesign01/
+This article contains work from the following source: 
+
+1.  Watt, A. and N. Eng. (2014). Database Design – 2nd Edition. Victoria, B.C.: BCcampus. Retrieved from https://opentextbc.ca/dbdesign01/
+
+</div>
