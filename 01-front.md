@@ -1,4 +1,4 @@
-<DIV class="markdown-body">
+<DIV class="markdown-body" style="font-size: 1.25em;">
 
 # Designing a Database
 
@@ -48,6 +48,8 @@ The first thing students should do would be **looking up similar DBMS** on the i
 
 In case of a fruitless search, students can still utilise their imaginations to draw out their design on a piece of paper (or more). After all, the objective is to let student identify entities, attributes and relationships through visualisation.
 
+<DIV style="page-break-inside: avoid;">
+
 ### Building a Picture
 
 Typically, a user login page is a good place to begin with. The sketches should include elements (such as input forms and buttons) corresponding to the pages navigated according to users’ interaction. Students are free to exercise their creativity as long as they are mindful of a few general rules:
@@ -56,6 +58,8 @@ Typically, a user login page is a good place to begin with. The sketches should 
 2.  Check for redundant/unnecessary collection of information in all input forms. (*e.g. instead of first/last name, **asking for full name is enough** if there is no requirement to identify surname*)
 3.  Collection of data should lead to a record at database.
 4.  Examine the logic behind the interaction and how it affects the subsequent pages.
+
+</div>
 
 ## Forming a Master Table
 
@@ -73,6 +77,8 @@ In an event where creating a single master table does not make sense (*e.g. gro
 
 Students will need to split the large table into several normal forms, a process known as normalisation. Below is an example of an unnormalised form resembles a master table:
 
+<DIV style="font-size: 0.8em;">
+
 | StudentNo |   StudentName   |      Major      | CourseNo | CourseName | InstructorNo |  InstructorName   | InstructorLocation | Grade |
 |:---------:|:---------------:|:---------------:|:--------:|:----------:|:------------:|:-----------------:|:------------------:|:-----:|
 |  S73621   | Abraham Snodden | Human Resources |  55586   |   Arabic   |   G649227    |   Ernest Disdel   |         NY         |   A   |
@@ -83,6 +89,10 @@ Students will need to split the large table into several normal forms, a process
 |  S75343   | Wynnie Larking  |   Accounting    |  55586   |   Arabic   |   G649227    |   Ernest Disdel   |         NY         |   C   |
 
 Follow the remaining sections to see how it can be normalised (up to 3<sup>rd</sup> normal form).
+
+</div>
+
+<DIV style="page-break-inside: avoid;">
 
 ### First Normal Form (1NF)
 
@@ -109,6 +119,8 @@ Here are the steps to normalise the table to 1NF:
 | After Normalisation (1NF)                                                                                                                                                                      |
 |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Student** (<ins>StudentNo</ins>, StudentName, Major) <br> **StudentCourse** (<ins>StudentNo</ins>, <ins>CourseNo</ins>, CourseName, InstructorNo, InstructorName, InstructorLocation, Grade) |
+
+</div>
 
 ### Second Normal Form (2NF)
 
@@ -168,10 +180,14 @@ All these information can be compiled into the following ER diagram:
 
 </div>
 
+<DIV style="page-break-inside: avoid;">
+
 ## Credits
 
 This article contains work from the following source: 
 
 1.  Watt, A. and N. Eng. (2014). Database Design – 2nd Edition. Victoria, B.C.: BCcampus. Retrieved from https://opentextbc.ca/dbdesign01/
+
+</div>
 
 </div>
