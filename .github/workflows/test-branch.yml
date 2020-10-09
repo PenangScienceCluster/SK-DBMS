@@ -19,11 +19,7 @@ jobs:
           echo "::set-output name=matrix::${FILE_JSON}"
 
   build_upload_pdf:
-    needs: [ populate_md_files ]
     runs-on: ubuntu-latest
-    strategy:
-      matrix: ${{fromJson(needs.populate_md_files.outputs.matrix)}}
-      fail-fast: false
     steps:
       - uses: actions/checkout@v2
       - run: |
