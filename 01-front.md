@@ -8,12 +8,17 @@ In database design, developers will start with **gathering requirements** from c
 
 ## Key Concepts/Glossary
 
-<figure class="image"><img src="./assets/entrel-view.svg" alt="Entity Relationship">
-  <figcaption style="text-align: center; font-style: italic;">Entity Relationship Diagram</figcaption>
+<figure class="image">
+<img src="./assets/entrel-view.svg" alt="Entity Relationship">
+<figcaption style="text-align: center; font-style: italic;">
+Entity Relationship Model
+</figcaption>
 </figure>
-
-<figure class="image"><img src="./assets/table-view.svg" alt="Table">
-  <figcaption style="text-align: center; font-style: italic;">Components of a database table</figcaption>
+<figure class="image">
+<img src="./assets/table-view.svg" alt="Table">
+<figcaption style="text-align: center; font-style: italic;">
+Components of a Database Table
+</figcaption>
 </figure>
 
 |                   Name | Definition                                                                                                                |
@@ -54,7 +59,7 @@ In case of a fruitless search, students can still utilise their imaginations to 
 
 Typically, a user login page is a good place to begin with. The sketches should include elements (such as input forms and buttons) corresponding to the pages navigated according to users’ interaction. Students are free to exercise their creativity as long as they are mindful of a few general rules:
 
-1.  Keep the content concise in each page, focus on meaningful interaction relevant to the topic only. (*e.g. there is **no need to create a user sign-up page** if it is not required*)
+1.  Keep the content concise in each webpage; focus on meaningful interaction relevant to the topic only. (*e.g. there is **no need to create a user sign-up page** if it is not required*)
 2.  Check for redundant/unnecessary collection of information in all input forms. (*e.g. instead of first/last name, **asking for full name is enough** if there is no requirement to identify surname*)
 3.  Collection of data should lead to a record at database.
 4.  Examine the logic behind the interaction and how it affects the subsequent pages.
@@ -65,17 +70,17 @@ Typically, a user login page is a good place to begin with. The sketches should 
 
 The steps below show how a master table can be derived from the last section:
 
-1.  Construct an entity relationship diagram for each relation that brings 2 entities together (*refer to the first diagram above*).
+1.  Construct an entity relationship model for each relation that brings 2 entities together (*refer to the first diagram above*).
 2.  Attempt to create one single table that includes **all** attributes.
-    1.  Fill in all the attributes into the table header
+    1.  Fill in all attributes into the table header
     2.  Add records (rows) to the table. The data can be random in nature, but make sure all entries are sensible representations of actual scenarios.
 3.  Give an appropriate entity name for the table you have created so far.
 
-In an event where creating a single master table does not make sense (*e.g. groups of entities that do not relate to each other in any way based on the entity relationship diagrams*), create a table for each of the group while strictly following step 2 and step 3 above.
+In an event where creating a single master table does not make sense (*e.g. groups of entities that do not relate to each other in any way based on the entity relationship models*), create a table for each of the group while strictly following step 2 and step 3 above.
 
 ## Normalisation
 
-Students will need to split the large table into several normal forms, a process known as normalisation. Below is an example of an unnormalised form resembles a master table:
+Students will need to split the large table into several normal forms, a process known as normalisation. Below is an example of an unnormalised form which resembles a master table:
 
 <DIV style="font-size: 0.8em;">
 
@@ -98,12 +103,12 @@ Follow the remaining sections to see how it can be normalised (up to 3<sup>rd</s
 
 The first normal form requires the table to contain only a single value anywhere in the cells, and there should be no repeating groups throughout the rows.
 
-<div style="padding: 0; display: table-cell; text-align: center; vertical-align: middle;">
-    <img src="./assets/multi-val.svg" alt="Multiple Value">
-    <img src="./assets/rep-group.svg" alt="Repeating Group">
+<DIV style="padding: 0; display: table-cell; text-align: center; vertical-align: middle;">
+  <img src="./assets/multi-val.svg" alt="Multiple Value">
+  <img src="./assets/rep-group.svg" alt="Repeating Group">
 </div>
 
-The examples above have nothing look alike with the unnormalised table, but still it has not yet fulfil the criterion for 1NF. Read the table carefully and you will notice the columns after “**Major**” are the repeating group (*i.e. each student gets a grade for each course the student has taken, and each student can take multiple courses*).
+Although the diagrams above have nothing look alike with the unnormalised table, the unnormalised table has not fulfilled the criterion for 1NF yet. Read the table carefully and you will notice the columns after (*not including*) “**Major**” are the repeating group (*i.e. each student gets a grade for each course the student has taken, and each student can take multiple courses*).
 
 Here are the steps to normalise the table to 1NF:
 
@@ -166,15 +171,29 @@ Here are the steps to normalise 2NF to 3NF:
 
 ## Construction of ER Diagram
 
-Populating the tables and labelling the relationships among them form an ER diagram. After 3 rounds of normalisation, there is only one step away to constructing the ER diagram. Without figuring out the relationships among the entities (tables), it is impossible to construct a complete ER diagram. In order to construct one for the example above, the following assumptions have to be made:
+After 3 rounds of normalisation, the tables are now ready to be populated on an ER diagram. However, without figuring out the relationships among the entities (tables), it is impossible to create links among the tables to form a complete ER diagram. Normally the relationships are set out (either implicitly or explicitly) in the requirements, and for the case of the example, the relationships are described as follows:
 
--   A student can take multiple courses and receive grades respectively.
+-   A student can take multiple courses and receive grades respectively. ***(one to many)***
 -   It is possible that a student may not be taking any courses.
 -   Each course will always have one instructor assigned to it.
--   Not all instructors are assigned to a course.
+-   Not all instructors are assigned to a course. Each instructor could also be assigned to teach multiple course. ***(one to many)***
 -   It is possible that a course has no students enrolled in it.
 
-All these information can be compiled into the following ER diagram:
+The questions below may help students to label the relationship (cardinality and connectivity) between 2 tables (e.g. Table A and Table B):
+
+1.  For one record in Table A, is it possible to appear in Table B multiple times?
+2.  For one record in Table A, is it possible that it will not exist at all in Table B?
+
+The answers above can be translated into the representation below:
+
+| Q1  | Q2  |           Representation           |
+|:---:|:---:|:----------------------------------:|
+| Yes | Yes | ![Many Optional](./assets/mo.svg)  |
+| Yes | No  | ![Many Mandatory](./assets/mm.svg) |
+| No  | Yes |  ![One Optional](./assets/oo.svg)  |
+| No  | No  | ![One Mandatory](./assets/om.svg)  |
+
+Eventually all these information can be compiled into the following ER diagram:
 
 ![ER Diagram](./assets/erd.svg)
 
@@ -184,7 +203,7 @@ All these information can be compiled into the following ER diagram:
 
 ## Credits
 
-This article contains work from the following source: 
+This article contains work from the following source:
 
 1.  Watt, A. and N. Eng. (2014). Database Design – 2nd Edition. Victoria, B.C.: BCcampus. Retrieved from https://opentextbc.ca/dbdesign01/
 

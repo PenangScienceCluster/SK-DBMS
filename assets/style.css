@@ -15,27 +15,23 @@
   border-bottom: 1px solid #BfBfBf;
 }
 
-body{
-  -webkit-print-color-adjust:exact;
-}
-
-table {
+.markdown-body table {
   padding: 0;
   margin-bottom: 20px;
 }
 
-table tr {
+.markdown-body table tr {
   border-top: 1px solid #cccccc;
   background-color: white;
   margin: 0;
   padding: 0;
 }
 
-table tr:nth-child(2n) {
+.markdown-body table tr:nth-child(2n) {
   background-color: #f8f8f8;
 }
 
-table tr th {
+.markdown-body table tr th {
   font-weight: bold;
   border: 0;
   text-align: left;
@@ -44,9 +40,19 @@ table tr th {
   background-color: #BfBfBf;
 }
 
-table tr td {
+.markdown-body table tr td {
   border: 1px solid #cccccc;
   text-align: left;
   margin: 0;
   padding: 4px 5px;
+}
+
+.markdown-body blockquote {
+  padding: 0 1em;
+  color: #6a737d;
+  border-left: .25em solid #dfe2e5;
+}
+
+body{
+  -webkit-print-color-adjust:exact;
 }

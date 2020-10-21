@@ -8,11 +8,25 @@ Based on the instructions, try to sketch the expected webpages your clients woul
 
 ---
 
+> A DBMS that allows authorised users to store other users' performance grades, and the other users are able to view their grades once available.
+
+<figure>
+  <img src="./assets/sketch.svg" alt="sketch1" style="height: 590px;">
+</figure>
+
+<figure>
+  <img src="./assets/sketch2.svg" alt="sketch2" style="height: 120px;">
+</figure>
+
 <DIV style="page-break-before: always;">
 
 Based on the sketches you have made, identify all entities, their attributes and relationships among them. For a better visualisation purpose, construct **an ER model** for **each relationship**.
 
 ---
+
+> A skill training academy offers several courses for its students. Students are allowed to take multiple courses at any point of time. The courses are conducted by several external training companies. These training companies, also known as instructors for the courses they are assigned to, hold examinations to assess the performance of their students who enrol to their courses.
+
+![ER Model](./assets/ermodel.svg)
 
 </div>
 
@@ -32,6 +46,10 @@ Create a master table by fitting all identified attributes into the header of th
 
 ---
 
+<figure>
+  <img src="./assets/0nf.png" alt="0NF" style="width: 90%;">
+</figure>
+
 </div>
 
 <DIV style="page-break-before: always;">
@@ -47,6 +65,10 @@ Give an appropriate name and assign a key (or composite keys) for each table.
 
 ---
 
+<figure>
+  <img src="./assets/1NF.png" alt="1NF" style="width: 90%;">
+</figure>
+
 </div>
 
 <DIV style="page-break-before: always;">
@@ -59,6 +81,10 @@ Give an appropriate name and assign a key (or composite keys) for each table.
 
 ---
 
+<figure>
+  <img src="./assets/2NF.png" alt="2NF" style="width: 90%;">
+</figure>
+
 </div>
 
 <DIV style="page-break-before: always;">
@@ -70,6 +96,10 @@ For 3NF: Split the table(s) until the answer for the following is **absolutely n
 Give an appropriate name and assign a key (or composite keys) for each table.
 
 ---
+
+<figure>
+  <img src="./assets/3NF.png" alt="3NF" style="width: 90%;">
+</figure>
 
 </div>
 
@@ -96,6 +126,17 @@ The answers correspond to the following notations:
 </div>
 
 ---
+
+Given the conditions below:
+
+> 1.  A student may not necessarily be enrolled in any courses all the time.
+> 2.  All courses must have at least one test to assess students' performance.
+> 3.  A course can only be taught by an instructor.
+> 4.  An instructor must teach at least one course.
+
+The diagram shall look like this:
+
+![ERD Example](./assets/erd-example.svg)
 
 </div>
 

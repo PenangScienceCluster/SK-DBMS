@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="689px" height="251px" viewBox="-0.5 -0.5 689 251" content="&lt;mxfile host=&quot;app.diagrams.net&quot; modified=&quot;2020-10-14T05:31:48.432Z&quot; agent=&quot;5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.228&quot; etag=&quot;4O0VveAJBwru-41fF3gQ&quot; version=&quot;13.7.9&quot; type=&quot;device&quot;&gt;&lt;diagram name=&quot;Page-1&quot; id=&quot;2ca16b54-16f6-2749-3443-fa8db7711227&quot;&gt;7ZptU+I6FMc/TV+60wcQfQlaXcX1MqJ7va+c0IYSTRNumvLgp9+kTdJWFCorIDOoMzb/nCQn6cn5NQXLO4tnlwyMR79oCLHl2uHM8s4t13UarmvJPzuc50rruJELEUOhMiqEPnqFSrSVmqIQJhVDTinmaFwVA0oIDHhFA4zRadVsSHF11DGI4ILQDwBeVP9FIR/l6onbKvSfEEUjNXLzxMsrBiB4iRhNiRrOcr1h9pNXx0B3peaZjEBIpyXJ8y3vjFHK86t4dgaxXFq9anm7iw9qjdsMEl6nwdD/eTl/iVvEeQzvwfR4lHQmR7qbhM/1esBQLI8qUsZHNKIEYL9QO9mkoezWFqXC5obSsRAdIT5DzufqXoOUUyGNeIxVLZwh/li6/k929cNtquL5THWdFea6QDibP5YL5WayXLTLSrphwgHjbRkpQvDvXiGj9/QXIHNdd4Gw8YyEhWUMSPgPgbmsjGSH+ZLJdfrwVuhlpSkL4JL11wEPWAT5EruGCRixDyGNoZigaMcgBhxNqn4AtSEiY1dEhbhQgfGJIFH9TgBOoY71Yyzc7YRoUgme4/9TGc6dAZ0dJegVkcjy2nKvUBZCdiRkUchW0J7me03WOraI3KapKW8sWS02FmzIX2MxBmFo+nbHs2JgcRXJ/z3/pn3dvnu6vPPPtbNi7pm/uYVWORgI59+bxMceDinhcn5Q1cK47IEdiDU1LpY6dBeskjEI3lrZi7Mxvg6oyLJvRbaghGYZuqXJF/Ki4S390e0ttZXi4kgrxhbxZl/U9eHhGQFydf61XtQcuwvHKU8TQD4/uhTfuy9Sz2NL628S7QQyjgSH2hhFREhcZs8OUCUMh7IVFVZDnCWkYZaBynm0mogNYGQhoDEK1DUGA4g7ZledUUyZqCI0y20JZ/TFoE92K8P7AsQIywz6G7IQEKBkldIdxXw5BThbngUXs5Zq4HmKjOrB4UQVpwWFHa2NSgR29JPD1ye6013SUBPvr2jonTorcJiVepAhsWaQGbHEPREXBpBV8r1BaQHIMke/GJFuTUQ2d4lIvR/2CJHdh7v+Q/8AxxpwoOLS7qYsSZPN0GnwLlWWubQBZ2qDugdJBJ4BW4fVB1quSUtzXla0dBs1cXm6KVqag+0e0dLAMW/WWnV2/MZc9Gpy0d0lF73942LPv72UZ8cDGTdLgo1wUTu0k0NkG4MYcHGP1vfigMc18dhofjc8NvYx9d0cMt/OXpitnfRuQQx3kvDuoUgslHzS8e0tzDUgHIl08z280Xg4MGFLTGi2vt0LxpO9/7itYf3t68XKB3DFOcqxdnOOatY8R30Qa9s5RzX372Gi7/evnh6ur9q3h+eJ1XDYyIdftd/obf4N56onCcDQy0j4kK3DgZFbY+Tp9hApisW3XbK60jeKPP8P&lt;/diagram&gt;&lt;/mxfile&gt;" style="background-color: rgb(255, 255, 255);">
+	<defs/>
+	<g>
+		<path d="M 448 27.5 L 508 27.5" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+		<ellipse cx="460" cy="27.5" rx="3" ry="3" fill="#ffffff" stroke="#000000" pointer-events="all"/>
+		<path d="M 448 31.5 L 456 27.5 L 448 23.5" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+		<path d="M 504 31.5 L 504 23.5 M 500 31.5 L 500 23.5" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+		<rect x="268" y="0" width="180" height="110" fill="#ffffff" stroke="#000000" pointer-events="all"/>
+		<g transform="translate(-0.5 -0.5)">
+			<switch>
+				<foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+					<div
+						xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 182px; height: 110px; padding-top: 0px; margin-left: 268px;">
+						<div style="box-sizing: border-box; font-size: 0; text-align: left; width: 182px; height: 110px; overflow: hidden; ">
+							<div style="display: inline-block; font-size: 12px; font-family: Verdana; color: #000000; line-height: 1.2; pointer-events: all; width: 100%; height: 100%; white-space: nowrap; ">
+								<div style="box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px">PELAJAR_GRED</div>
+								<table style="width: 100% ; font-size: 1em" cellpadding="2" cellspacing="0">
+									<tbody>
+										<tr>
+											<td>PK</td>
+											<td>No.KP</td>
+										</tr>
+										<tr>
+											<td>PK, FK</td>
+											<td>UjianID</td>
+										</tr>
+										<tr>
+											<td></td>
+											<td>Keputusan</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</foreignObject>
+				<text x="268" y="12" fill="#000000" font-family="Verdana" font-size="12px">PELAJAR_GRED...</text>
+			</switch>
+		</g>
+		<path d="M 148 182.5 L 8 182.5 L 8 43 L 28 43.01" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+		<path d="M 144 186.5 L 144 178.5 M 140 186.5 L 140 178.5" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+		<path d="M 20 47.01 L 20 39.01 M 28 39.01 L 20 43.01 L 28 47.01" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+		<rect x="148" y="160" width="180" height="90" fill="#ffffff" stroke="#000000" pointer-events="all"/>
+		<g transform="translate(-0.5 -0.5)">
+			<switch>
+				<foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+					<div
+						xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 182px; height: 90px; padding-top: 160px; margin-left: 148px;">
+						<div style="box-sizing: border-box; font-size: 0; text-align: left; width: 182px; height: 90px; overflow: hidden; ">
+							<div style="display: inline-block; font-size: 12px; font-family: Verdana; color: #000000; line-height: 1.2; pointer-events: all; width: 100%; height: 100%; white-space: nowrap; ">
+								<div style="box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px">KURSUS</div>
+								<table style="width: 100% ; font-size: 1em" cellpadding="2" cellspacing="0">
+									<tbody>
+										<tr>
+											<td>PK</td>
+											<td>Kod Kursus</td>
+										</tr>
+										<tr>
+											<td>
+												<br />
+											</td>
+											<td>Kursus</td>
+										</tr>
+										<tr>
+											<td>FK</td>
+											<td>PengajarID</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</foreignObject>
+				<text x="148" y="172" fill="#000000" font-family="Verdana" font-size="12px">KURSUS...</text>
+			</switch>
+		</g>
+		<path d="M 388 182.5 L 358 182.5 L 358 227.5 L 328 227.5" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+		<path d="M 384 186.5 L 384 178.5 M 380 186.5 L 380 178.5" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+		<path d="M 336 223.5 L 336 231.5 M 328 231.5 L 336 227.5 L 328 223.5" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+		<rect x="388" y="160" width="180" height="90" fill="#ffffff" stroke="#000000" pointer-events="all"/>
+		<g transform="translate(-0.5 -0.5)">
+			<switch>
+				<foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+					<div
+						xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 182px; height: 90px; padding-top: 160px; margin-left: 388px;">
+						<div style="box-sizing: border-box; font-size: 0; text-align: left; width: 182px; height: 90px; overflow: hidden; ">
+							<div style="display: inline-block; font-size: 12px; font-family: Verdana; color: #000000; line-height: 1.2; pointer-events: all; width: 100%; height: 100%; white-space: nowrap; ">
+								<div style="box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px">PENGAJAR</div>
+								<table style="width: 100% ; font-size: 1em" cellpadding="2" cellspacing="0">
+									<tbody>
+										<tr>
+											<td>PK</td>
+											<td>PengajarID</td>
+										</tr>
+										<tr>
+											<td>
+												<br />
+											</td>
+											<td>Pengajar</td>
+										</tr>
+										<tr>
+											<td></td>
+											<td>Alamat Pengajar</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</foreignObject>
+				<text x="388" y="172" fill="#000000" font-family="Verdana" font-size="12px">PENGAJAR...</text>
+			</switch>
+		</g>
+		<rect x="508" y="0" width="180" height="110" fill="#ffffff" stroke="#000000" pointer-events="all"/>
+		<g transform="translate(-0.5 -0.5)">
+			<switch>
+				<foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+					<div
+						xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 182px; height: 110px; padding-top: 0px; margin-left: 508px;">
+						<div style="box-sizing: border-box; font-size: 0; text-align: left; width: 182px; height: 110px; overflow: hidden; ">
+							<div style="display: inline-block; font-size: 12px; font-family: Verdana; color: #000000; line-height: 1.2; pointer-events: all; width: 100%; height: 100%; white-space: nowrap; ">
+								<div style="box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px">PELAJAR</div>
+								<table style="width: 100% ; font-size: 1em" cellpadding="2" cellspacing="0">
+									<tbody>
+										<tr>
+											<td>PK</td>
+											<td>No.KP</td>
+										</tr>
+										<tr>
+											<td>
+												<br />
+											</td>
+											<td>Name</td>
+										</tr>
+										<tr>
+											<td></td>
+											<td>Telefon
+												<br />
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<br />
+											</td>
+											<td>Jantina</td>
+										</tr>
+										<tr>
+											<td>
+												<br />
+											</td>
+											<td>Alamat</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</foreignObject>
+				<text x="508" y="12" fill="#000000" font-family="Verdana" font-size="12px">PELAJAR...</text>
+			</switch>
+		</g>
+		<path d="M 208 27.5 L 238 27.5 L 238 44 L 268 44" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+		<path d="M 212 23.5 L 212 31.5 M 216 23.5 L 216 31.5" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+		<ellipse cx="256" cy="44" rx="3" ry="3" fill="#ffffff" stroke="#000000" pointer-events="all"/>
+		<path d="M 268 40 L 260 44 L 268 48" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+		<rect x="28" y="0" width="180" height="110" fill="#ffffff" stroke="#000000" pointer-events="all"/>
+		<g transform="translate(-0.5 -0.5)">
+			<switch>
+				<foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+					<div
+						xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 182px; height: 110px; padding-top: 0px; margin-left: 28px;">
+						<div style="box-sizing: border-box; font-size: 0; text-align: left; width: 182px; height: 110px; overflow: hidden; ">
+							<div style="display: inline-block; font-size: 12px; font-family: Verdana; color: #000000; line-height: 1.2; pointer-events: all; width: 100%; height: 100%; white-space: nowrap; ">
+								<div style="box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px">SESI_UJIAN</div>
+								<table style="width: 100% ; font-size: 1em" cellpadding="2" cellspacing="0">
+									<tbody>
+										<tr>
+											<td>PK</td>
+											<td>UjianID</td>
+										</tr>
+										<tr>
+											<td>FK</td>
+											<td>Kod Kursus</td>
+										</tr>
+										<tr>
+											<td></td>
+											<td>Tarikh Ujian</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</foreignObject>
+				<text x="28" y="12" fill="#000000" font-family="Verdana" font-size="12px">SESI_UJIAN...</text>
+			</switch>
+		</g>
+	</g>
+	<switch>
+		<g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/>
+		<a transform="translate(0,-5)" xlink:href="https://desk.draw.io/support/solutions/articles/16000042487" target="_blank">
+			<text text-anchor="middle" font-size="10px" x="50%" y="100%">Viewer does not support full SVG 1.1</text>
+		</a>
+	</switch>
+</svg>
