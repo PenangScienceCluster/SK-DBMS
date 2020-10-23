@@ -1,4 +1,4 @@
-<DIV class="markdown-body" style="font-size: 1.25em;">
+<DIV id="wrapper">
 
 # Designing a Database · *Student’s Handout*
 

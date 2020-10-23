@@ -1,4 +1,4 @@
-<DIV class="markdown-body" style="font-size: 1.25em;">
+<DIV id="wrapper">
 
 # Designing a Database
 
@@ -10,16 +10,18 @@ In database design, developers will start with **gathering requirements** from c
 
 <figure class="image">
 <img src="./assets/entrel-view.svg" alt="Entity Relationship">
-<figcaption style="text-align: center; font-style: italic;">
+<figcaption style="text-align: center;">
 Entity Relationship Model
 </figcaption>
 </figure>
 <figure class="image">
 <img src="./assets/table-view.svg" alt="Table">
-<figcaption style="text-align: center; font-style: italic;">
+<figcaption style="text-align: center;">
 Components of a Database Table
 </figcaption>
 </figure>
+
+<DIV style="font-size: 0.8em;">
 
 |                   Name | Definition                                                                                                                |
 |-----------------------:|:--------------------------------------------------------------------------------------------------------------------------|
@@ -36,6 +38,8 @@ Components of a Database Table
 |            Primary key | a key which is is unique and minimal, chosen to be used as an identifying mechanism for the whole entity set              |
 |            Foreign key | an attribute in a table that references the primary key in another table                                                  |
 |          Composite key | two or more attributes which can be used to uniquely identify each record in a table                                      |
+
+</div>
 
 <DIV style="page-break-inside: avoid;">
 
@@ -82,7 +86,7 @@ In an event where creating a single master table does not make sense (*e.g. gro
 
 Students will need to split the large table into several normal forms, a process known as normalisation. Below is an example of an unnormalised form which resembles a master table:
 
-<DIV style="font-size: 0.8em;">
+<DIV style="font-size: 0.5em;">
 
 | StudentNo |   StudentName   |      Major      | CourseNo | CourseName | InstructorNo |  InstructorName   | InstructorLocation | Grade |
 |:---------:|:---------------:|:---------------:|:--------:|:----------:|:------------:|:-----------------:|:------------------:|:-----:|
@@ -93,9 +97,9 @@ Students will need to split the large table into several normal forms, a process
 |  S73262   |   Symon Trowl   |   Accounting    |  63009   |   German   |   G725957    |   Ginni Chesnut   |         TX         |   B   |
 |  S75343   | Wynnie Larking  |   Accounting    |  55586   |   Arabic   |   G649227    |   Ernest Disdel   |         NY         |   C   |
 
-Follow the remaining sections to see how it can be normalised (up to 3<sup>rd</sup> normal form).
-
 </div>
+
+Follow the remaining sections to see how it can be normalised (up to 3<sup>rd</sup> normal form).
 
 <DIV style="page-break-inside: avoid;">
 
