@@ -6,7 +6,7 @@
 
 In database design, developers will start with **gathering requirements** from customers, then proceed to **conceptual design**, **logical design** and lastly, **physical design**. This article covers all these topics **except physical design**.
 
-## Key Concepts/Glossary
+## Key Concepts
 
 <figure class="image">
 <img src="./assets/entrel-view.svg" alt="Entity Relationship">
@@ -21,7 +21,9 @@ Components of a Database Table
 </figcaption>
 </figure>
 
-<DIV style="font-size: 0.8em;">
+<DIV style="page-break-inside: avoid;">
+
+## Glossary
 
 |                   Name | Definition                                                                                                                |
 |-----------------------:|:--------------------------------------------------------------------------------------------------------------------------|
@@ -49,6 +51,8 @@ Components of a Database Table
 
 </div>
 
+<DIV style="page-break-inside: avoid;">
+
 ## Identifying Requirements
 
 Since there is no more retrievable information other than the descriptions and instructions from the question paper, students need to temporarily switch their role as a developer to a user of the database system they are going to design. This will help students to understand the expectation of their work from a customer’s perspective. This method relatively consumes shorter time compared to other fact-finding techniques.
@@ -56,8 +60,6 @@ Since there is no more retrievable information other than the descriptions and i
 The first thing students should do would be **looking up similar DBMS** on the internet. Almost a certainty students are able to find a system that works similarly, if not a complete suite. The system could be in a form of a file meant to be opened with a database management software (*e.g. Microsoft Access*), or a project repository that contains source code of the DBMS. If students are able to find one, they have to access and interact with the system as a user. Doing so will help students to **identify entities, attributes and relationships** that should be included in their database design.
 
 In case of a fruitless search, students can still utilise their imaginations to draw out their design on a piece of paper (or more). After all, the objective is to let student identify entities, attributes and relationships through visualisation.
-
-<DIV style="page-break-inside: avoid;">
 
 ### Building a Picture
 
@@ -69,6 +71,8 @@ Typically, a user login page is a good place to begin with. The sketches should 
 4.  Examine the logic behind the interaction and how it affects the subsequent pages.
 
 </div>
+
+<DIV style="page-break-inside: avoid;">
 
 ## Forming a Master Table
 
@@ -100,6 +104,8 @@ Students will need to split the large table into several normal forms, a process
 </div>
 
 Follow the remaining sections to see how it can be normalised (up to 3<sup>rd</sup> normal form).
+
+</div>
 
 <DIV style="page-break-inside: avoid;">
 
@@ -171,8 +177,6 @@ Here are the steps to normalise 2NF to 3NF:
 |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Student** (<ins>StudentNo</ins>, StudentName, Major) <br> **CourseGrade** (<ins>StudentNo</ins>, <ins>CourseNo</ins>, Grade) <br> **Course** (<ins>CourseNo</ins>, CourseName, InstructorNo) <br> **Instructor** (<ins>InstructorNo</ins>, InstructorName, InstructorLocation) |
 
-<DIV style="page-break-inside: avoid;">
-
 ## Construction of ER Diagram
 
 After 3 rounds of normalisation, the tables are now ready to be populated on an ER diagram. However, without figuring out the relationships among the entities (tables), it is impossible to create links among the tables to form a complete ER diagram. Normally the relationships are set out (either implicitly or explicitly) in the requirements, and for the case of the example, the relationships are described as follows:
@@ -200,8 +204,6 @@ The answers above can be translated into the representation below:
 Eventually all these information can be compiled into the following ER diagram:
 
 ![ER Diagram](./assets/erd.svg)
-
-</div>
 
 <DIV style="page-break-inside: avoid;">
 
