@@ -84,7 +84,7 @@ Ask yourself these questions when trying to label the cardinality and the connec
 1.  For one record in Table A, is it possible to appear in Table B multiple times?
 2.  For one record in Table A, is it possible that it will not exist at all in Table B?
 
-The answers correspond to the following notations:
+Draw the symbol from Table A to Table B according to the answers as below:
 
 <DIV style="font-size: 0.8em;">
 

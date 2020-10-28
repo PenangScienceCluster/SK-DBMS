@@ -192,7 +192,7 @@ The questions below may help students to label the relationship (cardinality and
 1.  For one record in Table A, is it possible to appear in Table B multiple times?
 2.  For one record in Table A, is it possible that it will not exist at all in Table B?
 
-The answers above can be translated into the representation below:
+The answers above can be translated into the representations (from Table A to Table B) below:
 
 | Q1  | Q2  |           Representation           |
 |:---:|:---:|:----------------------------------:|
