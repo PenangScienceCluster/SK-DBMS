@@ -12,6 +12,8 @@ There are other alternative ways to set up DBMS development environment with fre
 
 *Note: If you are using Windows 10, you may download and run this script to perform the set-up automatically: https://bit.ly/3o4iNKT*
 
+*Note: If you are using Ubuntu or other Debian derivatives, you may download and run this script (with root privilege) to perform the set-up automatically: https://bit.ly/35NHWRP*
+
 ## Apache + MySQL + PHP
 
 Apache, MySQL and PHP are three different pieces of software which are commonly used to host web applications over the network. Instead of downloading and installing them separately, they are available in a installer that bundles them so that the installation becomes easier. This bundle, called **XAMPP**, installs Apache (web server), MariaDB (database management system derived from MySQL), PHP (scripting language for web) and Perl (programming language) onto the system.

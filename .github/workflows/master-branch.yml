@@ -34,7 +34,7 @@ jobs:
           for asset in ./*.pdf; do
             assets+=("-a" "$asset")
           done
-          for asset in ./*.cmd; do
+          for asset in ./DevEnv-Setup.*; do
             assets+=("-a" "$asset")
           done
           hub release create --draft "${assets[@]}" -m "${GITHUB_SHA::7}" "${GITHUB_SHA::7}"

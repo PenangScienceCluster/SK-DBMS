@@ -1,0 +1,22 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ linsh ]
+  pull_request:
+    branches: [ linsh ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the Docker image
+      run: |
+        docker build . --file ./assets/Dockerfile --tag pscimg:latest
+    - name: Run script
+      run: |
+        cat ./assets/DevEnv-Setup.sh | docker run --rm -i -v $PWD:/home/psc/ws --env DEBIAN_FRONTEND=noninteractive --env USER=psc pscimg bash
