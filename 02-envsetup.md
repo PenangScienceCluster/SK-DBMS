@@ -10,9 +10,13 @@ Having a proper system set-up is crucial for software developers in order to pro
 
 There are other alternative ways to set up DBMS development environment with free software. Follow the sections below to find out more.
 
-*Note: If you are using Windows 10, you may download and run this script to perform the set-up automatically: https://bit.ly/3o4iNKT*
+<DIV style="font-size: 0.8em;">
 
-*Note: If you are using Ubuntu or other Debian derivatives, you may download and run this script (with root privilege) to perform the set-up automatically: https://bit.ly/35NHWRP*
+*Note: Windows 10 users may choose to download and run this script to perform the set-up automatically: https://bit.ly/3o4iNKT*
+
+*Note: Ubuntu or other Debian derivatives users may choose download and run this script (with root privilege) to perform the set-up automatically: https://bit.ly/35NHWRP*
+
+</div>
 
 ## Apache + MySQL + PHP
 
@@ -31,6 +35,8 @@ Learn more on how to set it up on Windows here: https://youtu.be/3B-CnezwEeo?t=1
 ## Git
 
 **Git** is a free version control system that helps developers to manage revisions of their development work. That means Git allows developers to revert changes if earlier snapshots of the work were saved in the past. It also allows developers to develop their project in different branches so that it will not introduce unfinalised work to the production branch.
+
+There are abundant resources for begineers to learn Git. One of them is here: https://bit.ly/3eeR3yt
 
 *Download link: https://git-scm.com/downloads*
 
